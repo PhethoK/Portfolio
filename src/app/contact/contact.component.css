@@ -1,0 +1,232 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #5f4587;
+}
+
+.socials {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icons li a svg {
+  width: 45px;
+  height: 45px;
+  line-height: 20px;
+  padding: 5px;
+  border: 1px solid rgba(256, 256, 256, 0.6);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icons li a svg:hover {
+  transform: rotate(360deg);
+}
+/*           
+.icons li svg {
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  padding: 1%;
+  border: 1px solid rgba(256, 256, 256, 0.6);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease 0.3s;
+
+  &:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: all 0.3s;
+  }
+}       */
+
+.bi-linkedin {
+  color: #007bb7;
+}
+
+.bi-facebook {
+  color: #3b5998;
+}
+
+.bi-instagram {
+  color: white;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.info-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.deeds {
+  display: inline;
+  width: 450px;
+  margin-left: 45px;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.deeds p {
+  margin-bottom: 10px;
+  size: 19px;
+}
+.info-box h2 {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  position: left;
+  top: 50%;
+  left: 50%;
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 0 auto;
+  /* Center the form horizontally   box-shadow: 4px 4px 2px rgba(254, 236, 164, 1); */
+}
+
+/* Responsive adjustments using media queries */
+@media screen and (min-width: 600px) {
+  .wrapper {
+    max-width: 400px;
+    /* Adjust the max-width for larger screens */
+  }
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #5f4587;
+}
+
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 1px solid #dad2d2;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea {
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  background: #a333ff;
+  color: #fcfbf7;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  background: #6cd7ea;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+@media (max-width: 600px) {
+  .deeds {
+    display: inline;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .deeds p {
+    margin-bottom: 7px;
+    size: 21px;
+  }
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin: 5px;
+    font-size: small;
+  }
+  h1 {
+    font-size: 40px;
+    color: #5f4587;
+  }
+}
+@media (max-width: 500px) {
+  .icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .icons li a svg {
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    padding: 5px;
+    border: 1px solid rgba(256, 256, 256, 0.6);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}

@@ -1,0 +1,117 @@
+a {
+  text-decoration: none;
+  color: white;
+
+  &.active {
+    border-bottom: 2px solid #85c2ff;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000; /* Ensure it appears above other content */
+  /* Add any other styles you want for your nav-bar */
+
+  ul {
+    padding: 20px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    position: sticky;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      a {
+        padding: 10px 0;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: #85c2ff;
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  height: 80vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 256, 0.3);
+  box-shadow: -10px 0 10px (rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+  color: black;
+}
+@media (min-width: 600px) {
+  .hideOnWeb {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    ul {
+      padding: 14px;
+      margin: 0 auto;
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 0 6px;
+
+        a {
+          padding: 10px 0;
+          color: #fff;
+          font-size: 16px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: #85c2ff;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}

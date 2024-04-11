@@ -1,0 +1,135 @@
+button {
+  border-radius: 25px;
+  margin: 0 auto;
+
+  background-color: #fff;
+  border: 1px solid #885df1;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  color: #885df1;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  color: #fff;
+  background: #885df1;
+  cursor: pointer;
+}
+.container h1 {
+  color: #5f4587;
+  text-align: center;
+  justify-content: center;
+}
+.skills {
+  list-style-type: none;
+  display: flex;
+}
+
+.no3 {
+  margin-top: 40px;
+  h2 {
+    color: #5f4587;
+    text-align: center;
+  }
+}
+.nth3 {
+  align-items: center;
+  justify-content: center;
+}
+.skill {
+  display: flex;
+  justify-content: center;
+}
+.skill ul {
+  list-style-type: none;
+  text-align: center;
+}
+.skill li {
+  display: inline-block;
+  margin: 0 40px;
+  /* Add spacing between list items */
+  align-items: center;
+  justify-content: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill li:hover .logo {
+  transform: translateY(-7px);
+  /* Adjust the distance the icon moves up */
+}
+
+.skill li .logo {
+  text-align: center;
+  transition: transform 0.3s ease-out;
+}
+.skill li .name {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-size: 16px;
+}
+
+.skill li:hover .name {
+  opacity: 1;
+}
+.context {
+  display: flex;
+  padding: 8px;
+}
+
+.textt {
+  flex: 1;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .no3 {
+    margin-top: 8px;
+    h2 {
+      font-size: 22px;
+    }
+  }
+  .skill li {
+    display: inline-block;
+    margin: 0 30px;
+    /* Add spacing between list items */
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .buttons p {
+    font-size: 17px;
+  }
+  .context {
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 0px;
+  }
+
+  .textt {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .skill li {
+    display: inline-block;
+    margin: 0 20px;
+    /* Add spacing between list items */
+    align-items: center;
+    justify-content: center;
+  }
+}

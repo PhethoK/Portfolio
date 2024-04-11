@@ -1,0 +1,62 @@
+.head {
+  text-align: center;
+  font-size: 40px;
+}
+.education {
+  border: 1px solid #ccc;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+#logo {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
+
+#details {
+  flex: 1;
+  margin: 10px;
+  padding-left: 80px;
+}
+
+@media (max-width: 900px) {
+  .education {
+    display: flex;
+    padding-right: 20px;
+    margin-top: 10px;
+
+    #logo {
+      flex: 1;
+      margin: 0px;
+      width: 100px;
+    }
+
+    #details {
+      flex: 1;
+      margin: 0px;
+      padding: 20px;
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .education {
+    display: flex;
+    padding-right: 20px;
+    margin-top: 10px;
+
+    #logo {
+      flex: 1;
+      margin: 0px;
+      width: 100px;
+    }
+
+    #details {
+      flex: 1;
+      margin: 0px;
+      font-size: 15px;
+      padding-left: 70px;
+    }
+  }
+}

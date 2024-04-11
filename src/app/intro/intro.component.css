@@ -1,0 +1,128 @@
+/* Center align the section */
+#portfolio-intro {
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Align horizontally to center */
+  align-items: center; /* Align vertically to center */
+  height: 600px;
+  margin-top: 10px;
+}
+
+/* Portfolio introduction section */
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.pro {
+  margin-right: 20px; /* Adjust spacing between image and text */
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.text-container {
+  color: white;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1s; /* Delay the text animation by 1 second */
+  animation-fill-mode: forwards;
+}
+
+#name {
+  font-size: 30px;
+  margin-bottom: 10px; /* Adjust spacing between name and role */
+}
+
+p {
+  font-size: 25px;
+  font-style: sans-serif;
+}
+
+/* Simple CSS animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  /* Center align the section */
+  #portfolio-intro {
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Align horizontally to center */
+    align-items: center; /* Align vertically to center */
+    height: auto; /* Adjust height to fit content */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  /* Portfolio introduction section */
+  .profile-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center;
+    text-align: center; /* Center align text */
+  }
+
+  .pro {
+    margin-bottom: 20px; /* Adjust spacing between image and text */
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .text-container {
+    color: white;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s; /* Delay the text animation by 1 second */
+    animation-fill-mode: forwards;
+  }
+
+  #name {
+    font-size: 30px;
+    margin-bottom: 10px; /* Adjust spacing between name and role */
+  }
+
+  p {
+    font-size: 25px;
+    font-style: sans-serif;
+  }
+
+  /* Simple CSS animation */
+  @keyframes slideInRight {
+    from {
+      transform: translateY(-50px) translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
